@@ -1,0 +1,2442 @@
+patilso@VWGOAERL328933 nng % pynng
+patilso@VWGOAERL328933 pynng-mqtt % pip3 install .      
+Processing /Users/patilso/Documents/Office/pynng-mqtt
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: sniffio in /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages (from pynng==0.7.1) (1.3.0)
+Requirement already satisfied: cffi in /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages (from pynng==0.7.1) (1.15.0)
+Requirement already satisfied: pycparser in /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages (from cffi->pynng==0.7.1) (2.21)
+Building wheels for collected packages: pynng
+  Building wheel for pynng (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+  
+  × Building wheel for pynng (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [2418 lines of output]
+      running bdist_wheel
+      running build
+      running build_py
+      CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+        Compatibility with CMake < 2.8.12 will be removed from a future version of
+        CMake.
+      
+        Update the VERSION argument <min> value or use a ...<max> suffix to tell
+        CMake that the project does not need compatibility with older versions.
+      
+      
+      -- The C compiler identification is AppleClang 14.0.0.14000029
+      -- Detecting C compiler ABI info
+      -- Detecting C compiler ABI info - done
+      -- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+      -- Detecting C compile features
+      -- Detecting C compile features - done
+      -- Found PythonInterp: /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10 (found version "3.10.8")
+      -- Found Perl: /usr/bin/perl (found version "5.30.3")
+      -- Configuring done
+      -- Generating done
+      -- Build files have been written to: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/build
+      [  0%] Building C object library/CMakeFiles/mbedcrypto.dir/aes.c.o
+      [  0%] Building C object library/CMakeFiles/mbedcrypto.dir/aesni.c.o
+      [  1%] Building C object library/CMakeFiles/mbedcrypto.dir/arc4.c.o
+      [  1%] Building C object library/CMakeFiles/mbedcrypto.dir/aria.c.o
+      [  1%] Building C object library/CMakeFiles/mbedcrypto.dir/asn1parse.c.o
+      [  2%] Building C object library/CMakeFiles/mbedcrypto.dir/asn1write.c.o
+      [  2%] Building C object library/CMakeFiles/mbedcrypto.dir/base64.c.o
+      [  2%] Building C object library/CMakeFiles/mbedcrypto.dir/bignum.c.o
+      [  3%] Building C object library/CMakeFiles/mbedcrypto.dir/blowfish.c.o
+      [  3%] Building C object library/CMakeFiles/mbedcrypto.dir/camellia.c.o
+      [  3%] Building C object library/CMakeFiles/mbedcrypto.dir/ccm.c.o
+      [  4%] Building C object library/CMakeFiles/mbedcrypto.dir/chacha20.c.o
+      [  4%] Building C object library/CMakeFiles/mbedcrypto.dir/chachapoly.c.o
+      [  4%] Building C object library/CMakeFiles/mbedcrypto.dir/cipher.c.o
+      [  5%] Building C object library/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.o
+      [  5%] Building C object library/CMakeFiles/mbedcrypto.dir/cmac.c.o
+      [  5%] Building C object library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.o
+      [  6%] Building C object library/CMakeFiles/mbedcrypto.dir/des.c.o
+      [  6%] Building C object library/CMakeFiles/mbedcrypto.dir/dhm.c.o
+      [  6%] Building C object library/CMakeFiles/mbedcrypto.dir/ecdh.c.o
+      [  7%] Building C object library/CMakeFiles/mbedcrypto.dir/ecdsa.c.o
+      [  7%] Building C object library/CMakeFiles/mbedcrypto.dir/ecjpake.c.o
+      [  7%] Building C object library/CMakeFiles/mbedcrypto.dir/ecp.c.o
+      [  8%] Building C object library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.o
+      [  8%] Building C object library/CMakeFiles/mbedcrypto.dir/entropy.c.o
+      [  8%] Building C object library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.o
+      [  9%] Building C object library/CMakeFiles/mbedcrypto.dir/error.c.o
+      [  9%] Building C object library/CMakeFiles/mbedcrypto.dir/gcm.c.o
+      [  9%] Building C object library/CMakeFiles/mbedcrypto.dir/havege.c.o
+      [ 10%] Building C object library/CMakeFiles/mbedcrypto.dir/hkdf.c.o
+      [ 10%] Building C object library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.o
+      [ 10%] Building C object library/CMakeFiles/mbedcrypto.dir/md.c.o
+      [ 11%] Building C object library/CMakeFiles/mbedcrypto.dir/md2.c.o
+      [ 11%] Building C object library/CMakeFiles/mbedcrypto.dir/md4.c.o
+      [ 11%] Building C object library/CMakeFiles/mbedcrypto.dir/md5.c.o
+      /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/library/md5.c:431:7: warning: suspicious concatenation of string literals in an array initialization; did you mean to separate the elements with a comma? [-Wstring-concatenation]
+            "345678901234567890" }
+            ^
+      /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/library/md5.c:430:7: note: place parentheses around the string literal to silence warning
+          { "12345678901234567890123456789012345678901234567890123456789012"
+            ^
+      1 warning generated.
+      [ 12%] Building C object library/CMakeFiles/mbedcrypto.dir/md_wrap.c.o
+      [ 12%] Building C object library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.o
+      [ 12%] Building C object library/CMakeFiles/mbedcrypto.dir/nist_kw.c.o
+      [ 13%] Building C object library/CMakeFiles/mbedcrypto.dir/oid.c.o
+      [ 13%] Building C object library/CMakeFiles/mbedcrypto.dir/padlock.c.o
+      [ 13%] Building C object library/CMakeFiles/mbedcrypto.dir/pem.c.o
+      [ 14%] Building C object library/CMakeFiles/mbedcrypto.dir/pk.c.o
+      [ 14%] Building C object library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.o
+      [ 14%] Building C object library/CMakeFiles/mbedcrypto.dir/pkcs12.c.o
+      [ 15%] Building C object library/CMakeFiles/mbedcrypto.dir/pkcs5.c.o
+      [ 15%] Building C object library/CMakeFiles/mbedcrypto.dir/pkparse.c.o
+      [ 15%] Building C object library/CMakeFiles/mbedcrypto.dir/pkwrite.c.o
+      [ 16%] Building C object library/CMakeFiles/mbedcrypto.dir/platform.c.o
+      [ 16%] Building C object library/CMakeFiles/mbedcrypto.dir/platform_util.c.o
+      [ 16%] Building C object library/CMakeFiles/mbedcrypto.dir/poly1305.c.o
+      [ 17%] Building C object library/CMakeFiles/mbedcrypto.dir/ripemd160.c.o
+      /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/library/ripemd160.c:487:7: warning: suspicious concatenation of string literals in an array initialization; did you mean to separate the elements with a comma? [-Wstring-concatenation]
+            "345678901234567890" },
+            ^
+      /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/library/ripemd160.c:486:7: note: place parentheses around the string literal to silence warning
+          { "12345678901234567890123456789012345678901234567890123456789012"
+            ^
+      1 warning generated.
+      [ 17%] Building C object library/CMakeFiles/mbedcrypto.dir/rsa.c.o
+      [ 17%] Building C object library/CMakeFiles/mbedcrypto.dir/rsa_internal.c.o
+      [ 18%] Building C object library/CMakeFiles/mbedcrypto.dir/sha1.c.o
+      [ 18%] Building C object library/CMakeFiles/mbedcrypto.dir/sha256.c.o
+      [ 18%] Building C object library/CMakeFiles/mbedcrypto.dir/sha512.c.o
+      /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/library/sha512.c:492:7: warning: suspicious concatenation of string literals in an array initialization; did you mean to separate the elements with a comma? [-Wstring-concatenation]
+            "hijklmnoijklmnopjklmnopqklmnopqrlmnopqrsmnopqrstnopqrstu" },
+            ^
+      /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/library/sha512.c:491:7: note: place parentheses around the string literal to silence warning
+          { "abcdefghbcdefghicdefghijdefghijkefghijklfghijklmghijklmn"
+            ^
+      1 warning generated.
+      [ 19%] Building C object library/CMakeFiles/mbedcrypto.dir/threading.c.o
+      [ 19%] Building C object library/CMakeFiles/mbedcrypto.dir/timing.c.o
+      [ 19%] Building C object library/CMakeFiles/mbedcrypto.dir/version.c.o
+      [ 20%] Building C object library/CMakeFiles/mbedcrypto.dir/version_features.c.o
+      [ 20%] Building C object library/CMakeFiles/mbedcrypto.dir/xtea.c.o
+      [ 20%] Linking C static library libmbedcrypto.a
+      [ 20%] Built target mbedcrypto
+      [ 20%] Building C object library/CMakeFiles/mbedx509.dir/certs.c.o
+      [ 20%] Building C object library/CMakeFiles/mbedx509.dir/pkcs11.c.o
+      [ 21%] Building C object library/CMakeFiles/mbedx509.dir/x509.c.o
+      [ 21%] Building C object library/CMakeFiles/mbedx509.dir/x509_create.c.o
+      [ 21%] Building C object library/CMakeFiles/mbedx509.dir/x509_crl.c.o
+      [ 22%] Building C object library/CMakeFiles/mbedx509.dir/x509_crt.c.o
+      [ 22%] Building C object library/CMakeFiles/mbedx509.dir/x509_csr.c.o
+      [ 22%] Building C object library/CMakeFiles/mbedx509.dir/x509write_crt.c.o
+      [ 23%] Building C object library/CMakeFiles/mbedx509.dir/x509write_csr.c.o
+      [ 23%] Linking C static library libmbedx509.a
+      [ 23%] Built target mbedx509
+      [ 24%] Building C object library/CMakeFiles/mbedtls.dir/debug.c.o
+      [ 24%] Building C object library/CMakeFiles/mbedtls.dir/net_sockets.c.o
+      [ 24%] Building C object library/CMakeFiles/mbedtls.dir/ssl_cache.c.o
+      [ 25%] Building C object library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.o
+      [ 25%] Building C object library/CMakeFiles/mbedtls.dir/ssl_cli.c.o
+      [ 25%] Building C object library/CMakeFiles/mbedtls.dir/ssl_cookie.c.o
+      [ 26%] Building C object library/CMakeFiles/mbedtls.dir/ssl_srv.c.o
+      [ 26%] Building C object library/CMakeFiles/mbedtls.dir/ssl_ticket.c.o
+      [ 26%] Building C object library/CMakeFiles/mbedtls.dir/ssl_tls.c.o
+      [ 27%] Linking C static library libmbedtls.a
+      [ 27%] Built target mbedtls
+      [ 27%] Generating test_suite_aes.ecb.c
+      [ 28%] Building C object tests/CMakeFiles/test_suite_aes.ecb.dir/test_suite_aes.ecb.c.o
+      [ 28%] Linking C executable test_suite_aes.ecb
+      [ 28%] Built target test_suite_aes.ecb
+      [ 28%] Generating test_suite_aes.cbc.c
+      [ 29%] Building C object tests/CMakeFiles/test_suite_aes.cbc.dir/test_suite_aes.cbc.c.o
+      [ 29%] Linking C executable test_suite_aes.cbc
+      [ 29%] Built target test_suite_aes.cbc
+      [ 29%] Generating test_suite_aes.cfb.c
+      [ 30%] Building C object tests/CMakeFiles/test_suite_aes.cfb.dir/test_suite_aes.cfb.c.o
+      [ 30%] Linking C executable test_suite_aes.cfb
+      [ 30%] Built target test_suite_aes.cfb
+      [ 30%] Generating test_suite_aes.ofb.c
+      [ 31%] Building C object tests/CMakeFiles/test_suite_aes.ofb.dir/test_suite_aes.ofb.c.o
+      [ 31%] Linking C executable test_suite_aes.ofb
+      [ 31%] Built target test_suite_aes.ofb
+      [ 31%] Generating test_suite_aes.rest.c
+      [ 32%] Building C object tests/CMakeFiles/test_suite_aes.rest.dir/test_suite_aes.rest.c.o
+      [ 32%] Linking C executable test_suite_aes.rest
+      [ 32%] Built target test_suite_aes.rest
+      [ 32%] Generating test_suite_aes.xts.c
+      [ 33%] Building C object tests/CMakeFiles/test_suite_aes.xts.dir/test_suite_aes.xts.c.o
+      [ 33%] Linking C executable test_suite_aes.xts
+      [ 33%] Built target test_suite_aes.xts
+      [ 33%] Generating test_suite_arc4.c
+      [ 34%] Building C object tests/CMakeFiles/test_suite_arc4.dir/test_suite_arc4.c.o
+      [ 34%] Linking C executable test_suite_arc4
+      [ 34%] Built target test_suite_arc4
+      [ 34%] Generating test_suite_aria.c
+      [ 35%] Building C object tests/CMakeFiles/test_suite_aria.dir/test_suite_aria.c.o
+      [ 35%] Linking C executable test_suite_aria
+      [ 35%] Built target test_suite_aria
+      [ 35%] Generating test_suite_asn1write.c
+      [ 36%] Building C object tests/CMakeFiles/test_suite_asn1write.dir/test_suite_asn1write.c.o
+      [ 36%] Linking C executable test_suite_asn1write
+      [ 36%] Built target test_suite_asn1write
+      [ 36%] Generating test_suite_base64.c
+      [ 37%] Building C object tests/CMakeFiles/test_suite_base64.dir/test_suite_base64.c.o
+      [ 37%] Linking C executable test_suite_base64
+      [ 37%] Built target test_suite_base64
+      [ 37%] Generating test_suite_blowfish.c
+      [ 38%] Building C object tests/CMakeFiles/test_suite_blowfish.dir/test_suite_blowfish.c.o
+      [ 38%] Linking C executable test_suite_blowfish
+      [ 38%] Built target test_suite_blowfish
+      [ 38%] Generating test_suite_camellia.c
+      [ 39%] Building C object tests/CMakeFiles/test_suite_camellia.dir/test_suite_camellia.c.o
+      [ 39%] Linking C executable test_suite_camellia
+      [ 39%] Built target test_suite_camellia
+      [ 39%] Generating test_suite_ccm.c
+      [ 40%] Building C object tests/CMakeFiles/test_suite_ccm.dir/test_suite_ccm.c.o
+      [ 40%] Linking C executable test_suite_ccm
+      [ 40%] Built target test_suite_ccm
+      [ 40%] Generating test_suite_chacha20.c
+      [ 41%] Building C object tests/CMakeFiles/test_suite_chacha20.dir/test_suite_chacha20.c.o
+      [ 41%] Linking C executable test_suite_chacha20
+      [ 41%] Built target test_suite_chacha20
+      [ 41%] Generating test_suite_chachapoly.c
+      [ 42%] Building C object tests/CMakeFiles/test_suite_chachapoly.dir/test_suite_chachapoly.c.o
+      [ 42%] Linking C executable test_suite_chachapoly
+      [ 42%] Built target test_suite_chachapoly
+      [ 42%] Generating test_suite_cipher.aes.c
+      [ 43%] Building C object tests/CMakeFiles/test_suite_cipher.aes.dir/test_suite_cipher.aes.c.o
+      [ 43%] Linking C executable test_suite_cipher.aes
+      [ 43%] Built target test_suite_cipher.aes
+      [ 43%] Generating test_suite_cipher.arc4.c
+      [ 44%] Building C object tests/CMakeFiles/test_suite_cipher.arc4.dir/test_suite_cipher.arc4.c.o
+      [ 44%] Linking C executable test_suite_cipher.arc4
+      [ 44%] Built target test_suite_cipher.arc4
+      [ 44%] Generating test_suite_cipher.blowfish.c
+      [ 45%] Building C object tests/CMakeFiles/test_suite_cipher.blowfish.dir/test_suite_cipher.blowfish.c.o
+      [ 45%] Linking C executable test_suite_cipher.blowfish
+      [ 45%] Built target test_suite_cipher.blowfish
+      [ 45%] Generating test_suite_cipher.camellia.c
+      [ 46%] Building C object tests/CMakeFiles/test_suite_cipher.camellia.dir/test_suite_cipher.camellia.c.o
+      [ 46%] Linking C executable test_suite_cipher.camellia
+      [ 46%] Built target test_suite_cipher.camellia
+      [ 46%] Generating test_suite_cipher.ccm.c
+      [ 47%] Building C object tests/CMakeFiles/test_suite_cipher.ccm.dir/test_suite_cipher.ccm.c.o
+      [ 47%] Linking C executable test_suite_cipher.ccm
+      [ 47%] Built target test_suite_cipher.ccm
+      [ 47%] Generating test_suite_cipher.chacha20.c
+      [ 48%] Building C object tests/CMakeFiles/test_suite_cipher.chacha20.dir/test_suite_cipher.chacha20.c.o
+      [ 48%] Linking C executable test_suite_cipher.chacha20
+      [ 48%] Built target test_suite_cipher.chacha20
+      [ 48%] Generating test_suite_cipher.chachapoly.c
+      [ 49%] Building C object tests/CMakeFiles/test_suite_cipher.chachapoly.dir/test_suite_cipher.chachapoly.c.o
+      [ 49%] Linking C executable test_suite_cipher.chachapoly
+      [ 49%] Built target test_suite_cipher.chachapoly
+      [ 50%] Generating test_suite_cipher.des.c
+      [ 50%] Building C object tests/CMakeFiles/test_suite_cipher.des.dir/test_suite_cipher.des.c.o
+      [ 50%] Linking C executable test_suite_cipher.des
+      [ 50%] Built target test_suite_cipher.des
+      [ 51%] Generating test_suite_cipher.gcm.c
+      [ 51%] Building C object tests/CMakeFiles/test_suite_cipher.gcm.dir/test_suite_cipher.gcm.c.o
+      [ 51%] Linking C executable test_suite_cipher.gcm
+      [ 51%] Built target test_suite_cipher.gcm
+      [ 52%] Generating test_suite_cipher.misc.c
+      [ 52%] Building C object tests/CMakeFiles/test_suite_cipher.misc.dir/test_suite_cipher.misc.c.o
+      [ 52%] Linking C executable test_suite_cipher.misc
+      [ 52%] Built target test_suite_cipher.misc
+      [ 53%] Generating test_suite_cipher.null.c
+      [ 53%] Building C object tests/CMakeFiles/test_suite_cipher.null.dir/test_suite_cipher.null.c.o
+      [ 53%] Linking C executable test_suite_cipher.null
+      [ 53%] Built target test_suite_cipher.null
+      [ 54%] Generating test_suite_cipher.padding.c
+      [ 54%] Building C object tests/CMakeFiles/test_suite_cipher.padding.dir/test_suite_cipher.padding.c.o
+      [ 54%] Linking C executable test_suite_cipher.padding
+      [ 54%] Built target test_suite_cipher.padding
+      [ 55%] Generating test_suite_cmac.c
+      [ 55%] Building C object tests/CMakeFiles/test_suite_cmac.dir/test_suite_cmac.c.o
+      [ 55%] Linking C executable test_suite_cmac
+      [ 55%] Built target test_suite_cmac
+      [ 56%] Generating test_suite_ctr_drbg.c
+      [ 56%] Building C object tests/CMakeFiles/test_suite_ctr_drbg.dir/test_suite_ctr_drbg.c.o
+      [ 56%] Linking C executable test_suite_ctr_drbg
+      [ 56%] Built target test_suite_ctr_drbg
+      [ 57%] Generating test_suite_debug.c
+      [ 57%] Building C object tests/CMakeFiles/test_suite_debug.dir/test_suite_debug.c.o
+      [ 57%] Linking C executable test_suite_debug
+      [ 57%] Built target test_suite_debug
+      [ 58%] Generating test_suite_des.c
+      [ 58%] Building C object tests/CMakeFiles/test_suite_des.dir/test_suite_des.c.o
+      [ 58%] Linking C executable test_suite_des
+      [ 58%] Built target test_suite_des
+      [ 59%] Generating test_suite_dhm.c
+      [ 59%] Building C object tests/CMakeFiles/test_suite_dhm.dir/test_suite_dhm.c.o
+      [ 59%] Linking C executable test_suite_dhm
+      [ 59%] Built target test_suite_dhm
+      [ 60%] Generating test_suite_ecdh.c
+      [ 60%] Building C object tests/CMakeFiles/test_suite_ecdh.dir/test_suite_ecdh.c.o
+      [ 60%] Linking C executable test_suite_ecdh
+      [ 60%] Built target test_suite_ecdh
+      [ 61%] Generating test_suite_ecdsa.c
+      [ 61%] Building C object tests/CMakeFiles/test_suite_ecdsa.dir/test_suite_ecdsa.c.o
+      [ 61%] Linking C executable test_suite_ecdsa
+      [ 61%] Built target test_suite_ecdsa
+      [ 62%] Generating test_suite_ecjpake.c
+      [ 62%] Building C object tests/CMakeFiles/test_suite_ecjpake.dir/test_suite_ecjpake.c.o
+      [ 62%] Linking C executable test_suite_ecjpake
+      [ 62%] Built target test_suite_ecjpake
+      [ 63%] Generating test_suite_ecp.c
+      [ 63%] Building C object tests/CMakeFiles/test_suite_ecp.dir/test_suite_ecp.c.o
+      [ 63%] Linking C executable test_suite_ecp
+      [ 63%] Built target test_suite_ecp
+      [ 64%] Generating test_suite_entropy.c
+      [ 64%] Building C object tests/CMakeFiles/test_suite_entropy.dir/test_suite_entropy.c.o
+      [ 64%] Linking C executable test_suite_entropy
+      [ 64%] Built target test_suite_entropy
+      [ 65%] Generating test_suite_error.c
+      [ 65%] Building C object tests/CMakeFiles/test_suite_error.dir/test_suite_error.c.o
+      [ 65%] Linking C executable test_suite_error
+      [ 65%] Built target test_suite_error
+      [ 66%] Generating test_suite_gcm.aes128_en.c
+      [ 66%] Building C object tests/CMakeFiles/test_suite_gcm.aes128_en.dir/test_suite_gcm.aes128_en.c.o
+      [ 66%] Linking C executable test_suite_gcm.aes128_en
+      [ 66%] Built target test_suite_gcm.aes128_en
+      [ 67%] Generating test_suite_gcm.aes192_en.c
+      [ 67%] Building C object tests/CMakeFiles/test_suite_gcm.aes192_en.dir/test_suite_gcm.aes192_en.c.o
+      [ 67%] Linking C executable test_suite_gcm.aes192_en
+      [ 67%] Built target test_suite_gcm.aes192_en
+      [ 68%] Generating test_suite_gcm.aes256_en.c
+      [ 68%] Building C object tests/CMakeFiles/test_suite_gcm.aes256_en.dir/test_suite_gcm.aes256_en.c.o
+      [ 68%] Linking C executable test_suite_gcm.aes256_en
+      [ 68%] Built target test_suite_gcm.aes256_en
+      [ 69%] Generating test_suite_gcm.aes128_de.c
+      [ 69%] Building C object tests/CMakeFiles/test_suite_gcm.aes128_de.dir/test_suite_gcm.aes128_de.c.o
+      [ 69%] Linking C executable test_suite_gcm.aes128_de
+      [ 69%] Built target test_suite_gcm.aes128_de
+      [ 70%] Generating test_suite_gcm.aes192_de.c
+      [ 70%] Building C object tests/CMakeFiles/test_suite_gcm.aes192_de.dir/test_suite_gcm.aes192_de.c.o
+      [ 70%] Linking C executable test_suite_gcm.aes192_de
+      [ 70%] Built target test_suite_gcm.aes192_de
+      [ 71%] Generating test_suite_gcm.aes256_de.c
+      [ 71%] Building C object tests/CMakeFiles/test_suite_gcm.aes256_de.dir/test_suite_gcm.aes256_de.c.o
+      [ 71%] Linking C executable test_suite_gcm.aes256_de
+      [ 71%] Built target test_suite_gcm.aes256_de
+      [ 72%] Generating test_suite_gcm.camellia.c
+      [ 72%] Building C object tests/CMakeFiles/test_suite_gcm.camellia.dir/test_suite_gcm.camellia.c.o
+      [ 72%] Linking C executable test_suite_gcm.camellia
+      [ 72%] Built target test_suite_gcm.camellia
+      [ 73%] Generating test_suite_gcm.misc.c
+      [ 73%] Building C object tests/CMakeFiles/test_suite_gcm.misc.dir/test_suite_gcm.misc.c.o
+      [ 73%] Linking C executable test_suite_gcm.misc
+      [ 73%] Built target test_suite_gcm.misc
+      [ 74%] Generating test_suite_hkdf.c
+      [ 74%] Building C object tests/CMakeFiles/test_suite_hkdf.dir/test_suite_hkdf.c.o
+      [ 74%] Linking C executable test_suite_hkdf
+      [ 74%] Built target test_suite_hkdf
+      [ 75%] Generating test_suite_hmac_drbg.misc.c
+      [ 75%] Building C object tests/CMakeFiles/test_suite_hmac_drbg.misc.dir/test_suite_hmac_drbg.misc.c.o
+      [ 75%] Linking C executable test_suite_hmac_drbg.misc
+      [ 75%] Built target test_suite_hmac_drbg.misc
+      [ 76%] Generating test_suite_hmac_drbg.no_reseed.c
+      [ 76%] Building C object tests/CMakeFiles/test_suite_hmac_drbg.no_reseed.dir/test_suite_hmac_drbg.no_reseed.c.o
+      [ 76%] Linking C executable test_suite_hmac_drbg.no_reseed
+      [ 76%] Built target test_suite_hmac_drbg.no_reseed
+      [ 77%] Generating test_suite_hmac_drbg.nopr.c
+      [ 77%] Building C object tests/CMakeFiles/test_suite_hmac_drbg.nopr.dir/test_suite_hmac_drbg.nopr.c.o
+      [ 77%] Linking C executable test_suite_hmac_drbg.nopr
+      [ 77%] Built target test_suite_hmac_drbg.nopr
+      [ 78%] Generating test_suite_hmac_drbg.pr.c
+      [ 78%] Building C object tests/CMakeFiles/test_suite_hmac_drbg.pr.dir/test_suite_hmac_drbg.pr.c.o
+      [ 78%] Linking C executable test_suite_hmac_drbg.pr
+      [ 78%] Built target test_suite_hmac_drbg.pr
+      [ 79%] Generating test_suite_md.c
+      [ 79%] Building C object tests/CMakeFiles/test_suite_md.dir/test_suite_md.c.o
+      [ 79%] Linking C executable test_suite_md
+      [ 79%] Built target test_suite_md
+      [ 80%] Generating test_suite_mdx.c
+      [ 80%] Building C object tests/CMakeFiles/test_suite_mdx.dir/test_suite_mdx.c.o
+      [ 80%] Linking C executable test_suite_mdx
+      [ 80%] Built target test_suite_mdx
+      [ 81%] Generating test_suite_memory_buffer_alloc.c
+      [ 81%] Building C object tests/CMakeFiles/test_suite_memory_buffer_alloc.dir/test_suite_memory_buffer_alloc.c.o
+      [ 81%] Linking C executable test_suite_memory_buffer_alloc
+      [ 81%] Built target test_suite_memory_buffer_alloc
+      [ 82%] Generating test_suite_mpi.c
+      [ 82%] Building C object tests/CMakeFiles/test_suite_mpi.dir/test_suite_mpi.c.o
+      [ 82%] Linking C executable test_suite_mpi
+      [ 82%] Built target test_suite_mpi
+      [ 83%] Generating test_suite_nist_kw.c
+      [ 83%] Building C object tests/CMakeFiles/test_suite_nist_kw.dir/test_suite_nist_kw.c.o
+      [ 83%] Linking C executable test_suite_nist_kw
+      [ 83%] Built target test_suite_nist_kw
+      [ 84%] Generating test_suite_pem.c
+      [ 84%] Building C object tests/CMakeFiles/test_suite_pem.dir/test_suite_pem.c.o
+      [ 84%] Linking C executable test_suite_pem
+      [ 84%] Built target test_suite_pem
+      [ 85%] Generating test_suite_pkcs1_v15.c
+      [ 85%] Building C object tests/CMakeFiles/test_suite_pkcs1_v15.dir/test_suite_pkcs1_v15.c.o
+      [ 85%] Linking C executable test_suite_pkcs1_v15
+      [ 85%] Built target test_suite_pkcs1_v15
+      [ 86%] Generating test_suite_pkcs1_v21.c
+      [ 86%] Building C object tests/CMakeFiles/test_suite_pkcs1_v21.dir/test_suite_pkcs1_v21.c.o
+      [ 86%] Linking C executable test_suite_pkcs1_v21
+      [ 86%] Built target test_suite_pkcs1_v21
+      [ 87%] Generating test_suite_pkcs5.c
+      [ 87%] Building C object tests/CMakeFiles/test_suite_pkcs5.dir/test_suite_pkcs5.c.o
+      [ 87%] Linking C executable test_suite_pkcs5
+      [ 87%] Built target test_suite_pkcs5
+      [ 88%] Generating test_suite_pk.c
+      [ 88%] Building C object tests/CMakeFiles/test_suite_pk.dir/test_suite_pk.c.o
+      [ 88%] Linking C executable test_suite_pk
+      [ 88%] Built target test_suite_pk
+      [ 89%] Generating test_suite_pkparse.c
+      [ 89%] Building C object tests/CMakeFiles/test_suite_pkparse.dir/test_suite_pkparse.c.o
+      [ 89%] Linking C executable test_suite_pkparse
+      [ 89%] Built target test_suite_pkparse
+      [ 90%] Generating test_suite_pkwrite.c
+      [ 90%] Building C object tests/CMakeFiles/test_suite_pkwrite.dir/test_suite_pkwrite.c.o
+      [ 90%] Linking C executable test_suite_pkwrite
+      [ 90%] Built target test_suite_pkwrite
+      [ 91%] Generating test_suite_poly1305.c
+      [ 91%] Building C object tests/CMakeFiles/test_suite_poly1305.dir/test_suite_poly1305.c.o
+      [ 91%] Linking C executable test_suite_poly1305
+      [ 91%] Built target test_suite_poly1305
+      [ 92%] Generating test_suite_shax.c
+      [ 92%] Building C object tests/CMakeFiles/test_suite_shax.dir/test_suite_shax.c.o
+      [ 92%] Linking C executable test_suite_shax
+      [ 92%] Built target test_suite_shax
+      [ 93%] Generating test_suite_ssl.c
+      [ 93%] Building C object tests/CMakeFiles/test_suite_ssl.dir/test_suite_ssl.c.o
+      [ 93%] Linking C executable test_suite_ssl
+      [ 93%] Built target test_suite_ssl
+      [ 94%] Generating test_suite_timing.c
+      [ 94%] Building C object tests/CMakeFiles/test_suite_timing.dir/test_suite_timing.c.o
+      [ 94%] Linking C executable test_suite_timing
+      [ 94%] Built target test_suite_timing
+      [ 95%] Generating test_suite_rsa.c
+      [ 95%] Building C object tests/CMakeFiles/test_suite_rsa.dir/test_suite_rsa.c.o
+      [ 95%] Linking C executable test_suite_rsa
+      [ 95%] Built target test_suite_rsa
+      [ 96%] Generating test_suite_version.c
+      [ 96%] Building C object tests/CMakeFiles/test_suite_version.dir/test_suite_version.c.o
+      [ 96%] Linking C executable test_suite_version
+      [ 96%] Built target test_suite_version
+      [ 97%] Generating test_suite_xtea.c
+      [ 97%] Building C object tests/CMakeFiles/test_suite_xtea.dir/test_suite_xtea.c.o
+      [ 98%] Linking C executable test_suite_xtea
+      [ 98%] Built target test_suite_xtea
+      [ 99%] Generating test_suite_x509parse.c
+      [ 99%] Building C object tests/CMakeFiles/test_suite_x509parse.dir/test_suite_x509parse.c.o
+      [ 99%] Linking C executable test_suite_x509parse
+      [ 99%] Built target test_suite_x509parse
+      [100%] Generating test_suite_x509write.c
+      [100%] Building C object tests/CMakeFiles/test_suite_x509write.dir/test_suite_x509write.c.o
+      [100%] Linking C executable test_suite_x509write
+      [100%] Built target test_suite_x509write
+      Install the project...
+      -- Install configuration: "Release"
+      -- Installing: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/lib/libmbedtls.a
+      -- Installing: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/lib/libmbedx509.a
+      -- Installing: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/lib/libmbedcrypto.a
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/aes.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/aesni.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/arc4.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/aria.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/asn1.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/asn1write.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/base64.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/bignum.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/blowfish.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/bn_mul.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/camellia.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ccm.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/certs.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/chacha20.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/chachapoly.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/check_config.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/cipher.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/cipher_internal.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/cmac.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/compat-1.3.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/config.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ctr_drbg.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/debug.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/des.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/dhm.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ecdh.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ecdsa.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ecjpake.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ecp.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ecp_internal.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/entropy.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/entropy_poll.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/error.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/gcm.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/havege.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/hkdf.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/hmac_drbg.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/md.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/md2.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/md4.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/md5.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/md_internal.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/memory_buffer_alloc.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/net.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/net_sockets.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/nist_kw.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/oid.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/padlock.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/pem.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/pk.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/pk_internal.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/pkcs11.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/pkcs12.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/pkcs5.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/platform.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/platform_time.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/platform_util.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/poly1305.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ripemd160.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/rsa.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/rsa_internal.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/sha1.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/sha256.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/sha512.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ssl.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ssl_cache.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ssl_ciphersuites.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ssl_cookie.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ssl_internal.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/ssl_ticket.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/threading.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/timing.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/version.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/x509.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/x509_crl.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/x509_crt.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/x509_csr.h
+      -- Up-to-date: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/include/mbedtls/xtea.h
+      -- The C compiler identification is AppleClang 14.0.0.14000029
+      -- Detecting C compiler ABI info
+      -- Detecting C compiler ABI info - done
+      -- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+      -- Detecting C compile features
+      -- Detecting C compile features - done
+      -- Configuring for NNG version 1.6.0-pre
+      -- Building static libs.
+      -- Performing Test NNG_HIDDEN_VISIBILITY
+      -- Performing Test NNG_HIDDEN_VISIBILITY - Success
+      -- Looking for strlcpy
+      -- Looking for strlcpy - found
+      -- Looking for strnlen
+      -- Looking for strnlen - found
+      -- Looking for strcasecmp
+      -- Looking for strcasecmp - found
+      -- Looking for strncasecmp
+      -- Looking for strncasecmp - found
+      -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+      -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+      -- Found Threads: TRUE
+      -- Looking for lockf
+      -- Looking for lockf - found
+      -- Looking for flock
+      -- Looking for flock - found
+      -- Looking for getrandom
+      -- Looking for getrandom - not found
+      -- Looking for arc4random_buf
+      -- Looking for arc4random_buf - found
+      -- Looking for clock_gettime in rt
+      -- Looking for clock_gettime in rt - not found
+      -- Looking for sem_wait in pthread
+      -- Looking for sem_wait in pthread - found
+      -- Looking for pthread_atfork in pthread
+      -- Looking for pthread_atfork in pthread - found
+      -- Looking for pthread_set_name_np in pthread
+      -- Looking for pthread_set_name_np in pthread - not found
+      -- Looking for pthread_setname_np in pthread
+      -- Looking for pthread_setname_np in pthread - found
+      -- Looking for gethostbyname in nsl
+      -- Looking for gethostbyname in nsl - not found
+      -- Looking for socket in socket
+      -- Looking for socket in socket - not found
+      -- Looking for __atomic_load_1 in atomic
+      -- Looking for __atomic_load_1 in atomic - not found
+      -- Looking for AF_UNIX
+      -- Looking for AF_UNIX - found
+      -- Looking for backtrace_symbols_fd
+      -- Looking for backtrace_symbols_fd - found
+      -- Performing Test NNG_HAVE_MSG_CONTROL
+      -- Performing Test NNG_HAVE_MSG_CONTROL - Success
+      -- Looking for eventfd
+      -- Looking for eventfd - not found
+      -- Looking for kqueue
+      -- Looking for kqueue - found
+      -- Looking for port_create
+      -- Looking for port_create - not found
+      -- Looking for epoll_create
+      -- Looking for epoll_create - not found
+      -- Looking for epoll_create1
+      -- Looking for epoll_create1 - not found
+      -- Looking for getpeereid
+      -- Looking for getpeereid - found
+      -- Looking for SO_PEERCRED
+      -- Looking for SO_PEERCRED - not found
+      -- Performing Test NNG_HAVE_SOCKPEERCRED
+      -- Performing Test NNG_HAVE_SOCKPEERCRED - Failed
+      -- Looking for LOCAL_PEERCRED
+      -- Looking for LOCAL_PEERCRED - found
+      -- Looking for LOCAL_PEERPID
+      -- Looking for LOCAL_PEERPID - found
+      -- Looking for getpeerucred
+      -- Looking for getpeerucred - not found
+      -- Looking for atomic_flag_test_and_set
+      -- Looking for atomic_flag_test_and_set - found
+      CMake Warning at src/supplemental/tls/mbedtls/CMakeLists.txt:11 (message):
+      
+      
+                ************************************************************
+                Linking against Mbed TLS changes license terms (Apache 2.0).
+                Consult a lawyer and the license files for details.
+                ************************************************************
+      
+      
+      -- Found mbedTLS: /Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/lib/libmbedtls.a (found version "2.16.3")
+      CMake Warning at src/supplemental/quic/msquic/CMakeLists.txt:8 (message):
+      
+      
+                ************************************************************
+                                Taking MSQUIC as quic lib
+                ************************************************************
+      
+      
+      -- CMAKE Version: 3.25.0
+      -- Source Dir: /Users/patilso/Documents/Office/pynng-mqtt/nng/extern/msquic
+      -- Host System name: Darwin
+      -- Setting policy 0091
+      -- The CXX compiler identification is AppleClang 14.0.0.14000029
+      -- Detecting CXX compiler ABI info
+      -- Detecting CXX compiler ABI info - done
+      -- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+      -- Detecting CXX compile features
+      -- Detecting CXX compile features - done
+      -- System name: Darwin
+      -- System version: 21.6.0
+      -- Platform version:
+      -- Build type: Release
+      -- QUIC Platform: darwin
+      -- Version Build ID: 0
+      -- Version Suffix: -private
+      -- Looking for _SC_PHYS_PAGES
+      -- Looking for _SC_PHYS_PAGES - found
+      -- Looking for sysconf
+      -- Looking for sysconf - found
+      -- Looking for sysctl
+      -- Looking for sysctl - found
+      -- Enabling OpenSsl configuration tests
+      -- Disabling (client) shared port support
+      -- QUIC_ENABLE_LOGGING is false. Disabling logging
+      -- Configuring for OpenSSL 1.1
+      -- Setting openssldir to /opt/homebrew/etc/openssl@3
+      -- Configuring for OpenSSL
+      -- Configuring done
+      -- Generating done
+      -- Build files have been written to: /Users/patilso/Documents/Office/pynng-mqtt/nng/build
+      [  0%] Building C object CMakeFiles/nng.dir/src/nng.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  1%] Building C object CMakeFiles/nng.dir/src/nng_legacy.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  1%] Building C object CMakeFiles/nng.dir/src/core/aio.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  1%] Building C object CMakeFiles/nng.dir/src/core/device.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  3%] Building C object CMakeFiles/nng.dir/src/core/dialer.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  3%] Building C object CMakeFiles/nng.dir/src/core/file.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  5%] Building C object CMakeFiles/nng.dir/src/core/idhash.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  5%] Building C object CMakeFiles/nng.dir/src/core/init.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  5%] Building C object CMakeFiles/nng.dir/src/core/list.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  6%] Building C object CMakeFiles/nng.dir/src/core/listener.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  6%] Building C object CMakeFiles/nng.dir/src/core/lmq.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  8%] Building C object CMakeFiles/nng.dir/src/core/message.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/message.c:414:23: warning: unused variable 'os' [-Wunused-variable]
+              struct nni_msg_opt * os;
+                                   ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/message.c:415:23: warning: unused variable 'od' [-Wunused-variable]
+              struct nni_msg_opt * od;
+                                   ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/message.c:416:23: warning: unused variable 'opp' [-Wunused-variable]
+              struct nni_msg_opt **opp;
+                                   ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/message.c:454:23: warning: unused variable 'mo' [-Wunused-variable]
+                      struct nni_msg_opt *mo;
+                                          ^
+      6 warnings generated.
+      [  8%] Building C object CMakeFiles/nng.dir/src/core/msgqueue.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [  8%] Building C object CMakeFiles/nng.dir/src/core/options.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 10%] Building C object CMakeFiles/nng.dir/src/core/pollable.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 10%] Building C object CMakeFiles/nng.dir/src/core/panic.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 11%] Building C object CMakeFiles/nng.dir/src/core/pipe.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 11%] Building C object CMakeFiles/nng.dir/src/core/reap.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 11%] Building C object CMakeFiles/nng.dir/src/core/socket.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 13%] Building C object CMakeFiles/nng.dir/src/core/stats.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 13%] Building C object CMakeFiles/nng.dir/src/core/stream.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 15%] Building C object CMakeFiles/nng.dir/src/core/strs.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 15%] Building C object CMakeFiles/nng.dir/src/core/taskq.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 15%] Building C object CMakeFiles/nng.dir/src/core/tcp.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 16%] Building C object CMakeFiles/nng.dir/src/core/thread.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 16%] Building C object CMakeFiles/nng.dir/src/core/timer.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 18%] Building C object CMakeFiles/nng.dir/src/core/url.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 18%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_alloc.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 18%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_atomic.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 20%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_clock.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 20%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_debug.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 21%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_file.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 21%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_ipcconn.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 21%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_ipcdial.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 23%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_ipclisten.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 23%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_pipe.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 25%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_resolv_gai.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 25%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_sockaddr.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 25%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_tcpconn.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 26%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_tcpdial.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 26%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_tcplisten.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 28%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_thread.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 28%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_udp.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 28%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_pollq_kqueue.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 30%] Building C object CMakeFiles/nng.dir/src/platform/posix/posix_rand_arc4random.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 30%] Building C object CMakeFiles/nng.dir/src/compat/nanomsg/nn.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 31%] Building C object CMakeFiles/nng.dir/src/mqtt/protocol/mqtt/mqtt_client.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_client.c:465:11: warning: unused variable 'row_id' [-Wunused-variable]
+              uint64_t row_id = 0;
+                       ^
+      3 warnings generated.
+      [ 31%] Building C object CMakeFiles/nng.dir/src/mqtt/protocol/mqtt/mqttv5_client.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqttv5_client.c:444:13: warning: unused variable 'rv' [-Wunused-variable]
+              int        rv;
+                         ^
+      3 warnings generated.
+      [ 31%] Building C object CMakeFiles/nng.dir/src/mqtt/protocol/mqtt/mqtt_quic.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:116:30: warning: incompatible pointer types passing 'int *' to parameter of type 'nni_atomic_int *' (aka 'struct nni_atomic_int *') [-Wincompatible-pointer-types]
+                      packet_id = nni_atomic_get(&p->next_packet_id);
+                                                 ^~~~~~~~~~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:223:44: note: passing argument to parameter here
+      extern int  nni_atomic_get(nni_atomic_int *);
+                                                 ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:118:22: warning: incompatible pointer types passing 'int *' to parameter of type 'nni_atomic_int *' (aka 'struct nni_atomic_int *') [-Wincompatible-pointer-types]
+                  !nni_atomic_cas(&p->next_packet_id, packet_id, packet_id + 1));
+                                  ^~~~~~~~~~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:233:44: note: passing argument to parameter here
+      extern bool nni_atomic_cas(nni_atomic_int *, int, int);
+                                                 ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:226:26: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+              if (nni_atomic_get_bool(&s->closed) ||
+                                      ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:194:50: note: passing argument to parameter here
+      extern bool nni_atomic_get_bool(nni_atomic_bool *);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:227:26: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+                  nni_atomic_get_bool(&p->closed)) {
+                                      ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:194:50: note: passing argument to parameter here
+      extern bool nni_atomic_get_bool(nni_atomic_bool *);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:291:26: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+              if (nni_atomic_get_bool(&s->closed) ||
+                                      ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:194:50: note: passing argument to parameter here
+      extern bool nni_atomic_get_bool(nni_atomic_bool *);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:292:26: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+                  nni_atomic_get_bool(&p->closed)) {
+                                      ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:194:50: note: passing argument to parameter here
+      extern bool nni_atomic_get_bool(nni_atomic_bool *);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:389:14: warning: variable 'payload' set but not used [-Wunused-but-set-variable]
+                                      uint8_t *payload;
+                                               ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:429:13: warning: variable 'payload' set but not used [-Wunused-but-set-variable]
+                              uint8_t *payload;
+                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:371:12: warning: unused variable 'buf' [-Wunused-variable]
+                      uint8_t  buf[4];
+                               ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:487:39: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+              if (NULL == p || nni_atomic_get_bool(&p->closed)) {
+                                                   ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:194:50: note: passing argument to parameter here
+      extern bool nni_atomic_get_bool(nni_atomic_bool *);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:500:11: warning: unused variable 'row_id' [-Wunused-variable]
+              uint64_t row_id = 0;
+                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:545:23: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+              nni_atomic_init_bool(&s->closed);
+                                   ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:192:51: note: passing argument to parameter here
+      extern void nni_atomic_init_bool(nni_atomic_bool *);
+                                                        ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:546:22: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+              nni_atomic_set_bool(&s->closed, false);
+                                  ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:193:50: note: passing argument to parameter here
+      extern void nni_atomic_set_bool(nni_atomic_bool *, bool);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:632:21: warning: unused variable 'tmsg' [-Wunused-variable]
+              nni_msg *    msg, *tmsg;
+                                 ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:696:26: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+              if (nni_atomic_get_bool(&s->closed) || nni_atomic_get_bool(&p->closed)) {
+                                      ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:194:50: note: passing argument to parameter here
+      extern bool nni_atomic_get_bool(nni_atomic_bool *);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:696:61: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+              if (nni_atomic_get_bool(&s->closed) || nni_atomic_get_bool(&p->closed)) {
+                                                                         ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:194:50: note: passing argument to parameter here
+      extern bool nni_atomic_get_bool(nni_atomic_bool *);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:846:22: warning: incompatible pointer types passing 'bool *' to parameter of type 'nni_atomic_bool *' (aka 'struct nni_atomic_bool *') [-Wincompatible-pointer-types]
+              nni_atomic_set_bool(&p->closed, true);
+                                  ^~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/core/platform.h:193:50: note: passing argument to parameter here
+      extern void nni_atomic_set_bool(nni_atomic_bool *, bool);
+                                                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:851:16: warning: incompatible function pointer types initializing 'int (*)(void *, nni_pipe *, void *)' (aka 'int (*)(void *, struct nni_pipe *, void *)') with an expression of type 'int (void *, void *, void *)' [-Wincompatible-function-pointer-types]
+              .pipe_init  = quic_mqtt_stream_init,
+                            ^~~~~~~~~~~~~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/protocol/mqtt/mqtt_quic.c:853:16: warning: incompatible function pointer types initializing 'int (*)(void *)' with an expression of type 'void (void *)' [-Wincompatible-function-pointer-types]
+              .pipe_start = quic_mqtt_stream_start,
+                            ^~~~~~~~~~~~~~~~~~~~~~
+      21 warnings generated.
+      [ 33%] Building C object CMakeFiles/nng.dir/src/mqtt/transport/tcp/mqtt_tcp.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/mqtt/transport/tcp/mqtt_tcp.c:850:59: warning: expression result unused [-Wunused-value]
+                                      p->qosmax == 1? (*header &= 0XF9) & (*header |= 0X02):*header;
+                                                                          ~~~~~~~~~~~~~~~~~ ^~~~~~~
+      3 warnings generated.
+      [ 33%] Building C object CMakeFiles/nng.dir/src/mqtt/transport/tls/mqtt_tls.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 35%] Building C object CMakeFiles/nng.dir/src/mqtt/transport.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 35%] Building C object CMakeFiles/nng.dir/src/sp/protocol/bus0/bus.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 35%] Building C object CMakeFiles/nng.dir/src/sp/protocol/pair0/pair.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 36%] Building C object CMakeFiles/nng.dir/src/sp/protocol/pair1/pair.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 36%] Building C object CMakeFiles/nng.dir/src/sp/protocol/pair1/pair1_poly.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 38%] Building C object CMakeFiles/nng.dir/src/sp/protocol/pipeline0/push.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 38%] Building C object CMakeFiles/nng.dir/src/sp/protocol/pipeline0/pull.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 38%] Building C object CMakeFiles/nng.dir/src/sp/protocol/pubsub0/pub.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 40%] Building C object CMakeFiles/nng.dir/src/sp/protocol/pubsub0/sub.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 40%] Building C object CMakeFiles/nng.dir/src/sp/protocol/pubsub0/xsub.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 41%] Building C object CMakeFiles/nng.dir/src/sp/protocol/reqrep0/req.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 41%] Building C object CMakeFiles/nng.dir/src/sp/protocol/reqrep0/xreq.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 41%] Building C object CMakeFiles/nng.dir/src/sp/protocol/reqrep0/rep.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 43%] Building C object CMakeFiles/nng.dir/src/sp/protocol/reqrep0/xrep.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 43%] Building C object CMakeFiles/nng.dir/src/sp/protocol/survey0/survey.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 45%] Building C object CMakeFiles/nng.dir/src/sp/protocol/survey0/xsurvey.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 45%] Building C object CMakeFiles/nng.dir/src/sp/protocol/survey0/respond.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 45%] Building C object CMakeFiles/nng.dir/src/sp/protocol/survey0/xrespond.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 46%] Building C object CMakeFiles/nng.dir/src/sp/transport/inproc/inproc.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 46%] Building C object CMakeFiles/nng.dir/src/sp/transport/ipc/ipc.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 48%] Building C object CMakeFiles/nng.dir/src/sp/transport/tcp/tcp.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 48%] Building C object CMakeFiles/nng.dir/src/sp/transport/tls/tls.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 48%] Building C object CMakeFiles/nng.dir/src/sp/transport/ws/websocket.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 50%] Building C object CMakeFiles/nng.dir/src/sp/protocol.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 50%] Building C object CMakeFiles/nng.dir/src/sp/transport.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 51%] Building C object CMakeFiles/nng.dir/src/supplemental/base64/base64.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 51%] Building C object CMakeFiles/nng.dir/src/supplemental/http/http_public.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 51%] Building C object CMakeFiles/nng.dir/src/supplemental/http/http_client.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 53%] Building C object CMakeFiles/nng.dir/src/supplemental/http/http_chunk.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 53%] Building C object CMakeFiles/nng.dir/src/supplemental/http/http_conn.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 55%] Building C object CMakeFiles/nng.dir/src/supplemental/http/http_msg.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 55%] Building C object CMakeFiles/nng.dir/src/supplemental/http/http_schemes.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 55%] Building C object CMakeFiles/nng.dir/src/supplemental/http/http_server.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 56%] Building C object CMakeFiles/nng.dir/src/supplemental/sha1/sha1.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 56%] Building C object CMakeFiles/nng.dir/src/supplemental/tls/mbedtls/tls.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 56%] Building C object CMakeFiles/nng.dir/src/supplemental/tls/tls_common.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 58%] Building C object CMakeFiles/nng.dir/src/supplemental/util/options.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 58%] Building C object CMakeFiles/nng.dir/src/supplemental/util/platform.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 60%] Building C object CMakeFiles/nng.dir/src/supplemental/websocket/websocket.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 60%] Building C object CMakeFiles/nng.dir/src/supplemental/mqtt/mqtt_public.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 60%] Building C object CMakeFiles/nng.dir/src/supplemental/mqtt/mqtt_codec.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/mqtt/mqtt_codec.c:671:6: warning: variable 'poslength' set but not used [-Wunused-but-set-variable]
+              int poslength = 6;
+                  ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/mqtt/mqtt_codec.c:901:6: warning: variable 'poslength' set but not used [-Wunused-but-set-variable]
+              int poslength = 0;
+                  ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/mqtt/mqtt_codec.c:969:6: warning: variable 'poslength' set but not used [-Wunused-but-set-variable]
+              int poslength = 2; /* for Packet Identifier */
+                  ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/mqtt/mqtt_codec.c:1220:6: warning: variable 'poslength' set but not used [-Wunused-but-set-variable]
+              int poslength = 0;
+                  ^
+      6 warnings generated.
+      [ 61%] Building C object CMakeFiles/nng.dir/src/supplemental/mqtt/mqtt_msg.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      2 warnings generated.
+      [ 61%] Building C object CMakeFiles/nng.dir/src/supplemental/quic/quic_api.c.o
+      In file included from <built-in>:400:
+      <command line>:43:9: warning: 'NNG_TLS_ENGINE_FINI' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_FINI nng_tls_engine_fini_mbed
+              ^
+      <command line>:42:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_FINI nng_quic_libs_fini_msquic
+              ^
+      <command line>:45:9: warning: 'NNG_TLS_ENGINE_INIT' macro redefined [-Wmacro-redefined]
+      #define NNG_TLS_ENGINE_INIT nng_tls_engine_init_mbed
+              ^
+      <command line>:44:9: note: previous definition is here
+      #define NNG_TLS_ENGINE_INIT nng_quic_libs_init_msquic
+              ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:171:11: warning: unused variable 'rmsg' [-Wunused-variable]
+              nni_msg *rmsg, *smsg;
+                       ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:168:6: warning: variable 'rlen' set but not used [-Wunused-but-set-variable]
+              int rlen, n;
+                  ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:364:22: warning: initializing 'nni_proto_pipe_ops *' (aka 'struct nni_proto_pipe_ops *') with an expression of type 'const nni_proto_pipe_ops *' (aka 'const struct nni_proto_pipe_ops *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+              nni_proto_pipe_ops *pipe_ops = g_quic_proto->proto_pipe_ops;
+                                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:473:1: warning: non-void function does not return a value [-Wreturn-type]
+      }
+      ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:484:71: warning: unused parameter 'active' [-Wunused-parameter]
+      quic_strm_start(HQUIC Connection, void *Context, HQUIC *Streamp, bool active)
+                                                                            ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:607:20: warning: comparison of integers of different signs: 'int' and 'unsigned long' [-Wsign-compare]
+              for (int i = 0; i < strlen(url_s->u_host); ++i)
+                              ~ ^ ~~~~~~~~~~~~~~~~~~~~~
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:840:15: warning: unused variable 'rv' [-Wunused-variable]
+              int          rv;
+                           ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:872:45: warning: unused parameter 'dp' [-Wunused-parameter]
+      nni_msquic_dialer_alloc(nng_stream_dialer **dp, const nng_url *url)
+                                                  ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:872:64: warning: unused parameter 'url' [-Wunused-parameter]
+      nni_msquic_dialer_alloc(nng_stream_dialer **dp, const nng_url *url)
+                                                                     ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:878:49: warning: unused parameter 'lp' [-Wunused-parameter]
+      nni_msquic_listener_alloc(nng_stream_listener **lp, const nng_url *url)
+                                                      ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:878:68: warning: unused parameter 'url' [-Wunused-parameter]
+      nni_msquic_listener_alloc(nng_stream_listener **lp, const nng_url *url)
+                                                                         ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:467:1: warning: unused function 'quic_strm_close' [-Wunused-function]
+      quic_strm_close(HQUIC Connection, HQUIC Stream)
+      ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:750:1: warning: unused function 'quic_strm_send_cancel' [-Wunused-function]
+      quic_strm_send_cancel(nni_aio *aio, void *arg, int rv)
+      ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:81:16: warning: unused function 'quic_strm_recv_cb' [-Wunused-function]
+      static void    quic_strm_recv_cb();
+                     ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:530:1: warning: unused function 'quic_close' [-Wunused-function]
+      quic_close()
+      ^
+      /Users/patilso/Documents/Office/pynng-mqtt/nng/src/supplemental/quic/quic_api.c:866:1: warning: unused function 'quic_alloc' [-Wunused-function]
+      quic_alloc()
+      ^
+      18 warnings generated.
+      [ 63%] Linking C static library libnng.a
+      [ 63%] Built target nng
+      [ 65%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/ack_tracker.c.o
+      [ 65%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/api.c.o
+      [ 65%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/binding.c.o
+      [ 66%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/configuration.c.o
+      [ 66%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/congestion_control.c.o
+      [ 68%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/connection.c.o
+      [ 68%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/crypto.c.o
+      [ 68%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/crypto_tls.c.o
+      [ 70%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/cubic.c.o
+      [ 70%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/datagram.c.o
+      [ 71%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/frame.c.o
+      [ 71%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/library.c.o
+      [ 71%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/listener.c.o
+      [ 73%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/lookup.c.o
+      [ 73%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/loss_detection.c.o
+      [ 75%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/mtu_discovery.c.o
+      [ 75%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/operation.c.o
+      [ 75%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/packet.c.o
+      [ 76%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/packet_builder.c.o
+      [ 76%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/packet_space.c.o
+      [ 78%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/path.c.o
+      [ 78%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/range.c.o
+      [ 78%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/recv_buffer.c.o
+      [ 80%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/registration.c.o
+      [ 80%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/send.c.o
+      [ 81%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/send_buffer.c.o
+      [ 81%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/sent_packet_metadata.c.o
+      [ 81%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/settings.c.o
+      [ 83%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/stream.c.o
+      [ 83%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/stream_recv.c.o
+      [ 85%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/stream_send.c.o
+      [ 85%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/stream_set.c.o
+      [ 85%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/timer_wheel.c.o
+      [ 86%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/worker.c.o
+      [ 86%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/version_neg.c.o
+      [ 88%] Building C object src/supplemental/quic/msquic/msquic/src/core/CMakeFiles/core.dir/inline.c.o
+      [ 88%] Linking C static library ../../obj/Release/libcore.a
+      [ 88%] Built target core
+      [ 88%] OpenSSL configure
+      Operating system: arm64-apple-darwinDarwin Kernel Version 21.6.0: Mon Aug 22 20:19:52 PDT 2022; root:xnu-8020.140.49~2/RELEASE_ARM64_T6000
+      Configuring OpenSSL version 1.1.1o+quic (0x101010ffL) for darwin64-arm64-cc
+      Using os-specific seed configuration
+      Creating configdata.pm
+      Creating Makefile
+      
+      **********************************************************************
+      ***                                                                ***
+      ***   OpenSSL has been successfully configured                     ***
+      ***                                                                ***
+      ***   If you encounter a problem while building, please open an    ***
+      ***   issue on GitHub <https://github.com/openssl/openssl/issues>  ***
+      ***   and include the output from the following command:           ***
+      ***                                                                ***
+      ***       perl configdata.pm --dump                                ***
+      ***                                                                ***
+      ***   (If you are new to OpenSSL, you might want to consult the    ***
+      ***   'Troubleshooting' section in the INSTALL file first)         ***
+      ***                                                                ***
+      **********************************************************************
+      [ 88%] OpenSSL build
+      ar: creating archive apps/libapps.a
+      ar: creating archive libcrypto.a
+      ar: creating archive libssl.a
+      created directory `/Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/lib'
+      *** Installing runtime libraries
+      *** Installing development files
+      created directory `/Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl'
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/aes.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/aes.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/asn1.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/asn1.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/asn1_mac.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/asn1_mac.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/asn1err.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/asn1err.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/asn1t.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/asn1t.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/async.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/async.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/asyncerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/asyncerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/bio.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/bio.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/bioerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/bioerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/blowfish.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/blowfish.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/bn.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/bn.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/bnerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/bnerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/buffer.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/buffer.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/buffererr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/buffererr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/camellia.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/camellia.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/cast.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/cast.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/cmac.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/cmac.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/cms.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/cms.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/cmserr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/cmserr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/comp.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/comp.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/comperr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/comperr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/conf.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/conf.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/conf_api.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/conf_api.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/conferr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/conferr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/crypto.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/crypto.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/cryptoerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/cryptoerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ct.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ct.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/cterr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/cterr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/des.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/des.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/dh.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/dh.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/dherr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/dherr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/dsa.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/dsa.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/dsaerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/dsaerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/dtls1.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/dtls1.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/e_os2.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/e_os2.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ebcdic.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ebcdic.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ec.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ec.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ecdh.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ecdh.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ecdsa.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ecdsa.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ecerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ecerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/engine.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/engine.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/engineerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/engineerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/err.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/err.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/evp.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/evp.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/evperr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/evperr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/hmac.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/hmac.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/idea.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/idea.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/kdf.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/kdf.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/kdferr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/kdferr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/lhash.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/lhash.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/md2.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/md2.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/md4.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/md4.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/md5.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/md5.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/mdc2.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/mdc2.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/modes.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/modes.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/obj_mac.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/obj_mac.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/objects.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/objects.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/objectserr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/objectserr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ocsp.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ocsp.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ocsperr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ocsperr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/opensslv.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/opensslv.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ossl_typ.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ossl_typ.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/pem.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/pem.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/pem2.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/pem2.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/pemerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/pemerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/pkcs12.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/pkcs12.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/pkcs12err.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/pkcs12err.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/pkcs7.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/pkcs7.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/pkcs7err.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/pkcs7err.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/rand.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/rand.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/rand_drbg.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/rand_drbg.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/randerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/randerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/rc2.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/rc2.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/rc4.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/rc4.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/rc5.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/rc5.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ripemd.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ripemd.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/rsa.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/rsa.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/rsaerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/rsaerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/safestack.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/safestack.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/seed.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/seed.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/sha.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/sha.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/srp.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/srp.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/srtp.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/srtp.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ssl.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ssl.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ssl2.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ssl2.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ssl3.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ssl3.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/sslerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/sslerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/stack.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/stack.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/store.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/store.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/storeerr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/storeerr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/symhacks.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/symhacks.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/tls1.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/tls1.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ts.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ts.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/tserr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/tserr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/txt_db.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/txt_db.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/ui.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/ui.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/uierr.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/uierr.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/whrlpool.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/whrlpool.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/x509.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/x509.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/x509_vfy.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/x509_vfy.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/x509err.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/x509err.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/x509v3.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/x509v3.h
+      install ../../../../../extern/msquic/submodules/openssl/include/openssl/x509v3err.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/x509v3err.h
+      install ./include/openssl/opensslconf.h -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/include/openssl/opensslconf.h
+      install libcrypto.a -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/lib/libcrypto.a
+      install libssl.a -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/lib/libssl.a
+      created directory `/Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/lib/pkgconfig'
+      install libcrypto.pc -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/lib/pkgconfig/libcrypto.pc
+      install libssl.pc -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/lib/pkgconfig/libssl.pc
+      install openssl.pc -> /Users/patilso/Documents/Office/pynng-mqtt/nng/build/_deps/opensslquic-build/openssl/lib/pkgconfig/openssl.pc
+      [ 88%] Built target OpenSSL_Target
+      [ 88%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/crypt.c.o
+      [ 88%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/hashtable.c.o
+      [ 90%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/pcp.c.o
+      [ 90%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/platform_worker.c.o
+      [ 91%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/toeplitz.c.o
+      [ 91%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/inline.c.o
+      [ 91%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/platform_posix.c.o
+      [ 93%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/storage_posix.c.o
+      [ 93%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/cgroup.c.o
+      [ 95%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/datapath_kqueue.c.o
+      [ 95%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/tls_openssl.c.o
+      [ 95%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/crypt_openssl.c.o
+      [ 96%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/certificates_darwin.c.o
+      [ 96%] Building C object src/supplemental/quic/msquic/msquic/src/platform/CMakeFiles/platform.dir/selfsign_openssl.c.o
+      [ 98%] Linking C static library ../../obj/Release/libplatform.a
+      [ 98%] Built target platform
+      [ 98%] Building C object src/supplemental/quic/msquic/msquic/src/bin/CMakeFiles/msquic.dir/linux/init.c.o
+      [100%] Linking C shared library ../../bin/Release/libmsquic.dylib
+      [100%] Built target msquic
+      build_nng_lib()
+      build_libs()
+      building mbedtls with: ['cmake', '-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true', '-DENABLE_PROGRAMS=OFF', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=../prefix', '..']
+      build_nng()
+      building mbedtls with: ['cmake', '-DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true', '-DNNG_ENABLE_TLS=ON', '-DNNG_TESTS=OFF', '-DNNG_TOOLS=OFF', '-DCMAKE_BUILD_TYPE=Release', '-DMBEDTLS_ROOT_DIR=/Users/patilso/Documents/Office/pynng-mqtt/mbedtls/prefix/', '..']
+      running build_ext
+      generating cffi module 'build/temp.macosx-10.9-universal2-cpython-310/pynng._nng.c'
+      already up-to-date
+      build_nng_lib()
+      build_libs()
+      error: [Errno 17] File exists: 'mbedtls/build'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pynng
+Failed to build pynng
+ERROR: Could not build wheels for pynng, which is required to install pyproject.toml-based projects
+patilso@VWGOAERL328933 pynng-mqtt % 
